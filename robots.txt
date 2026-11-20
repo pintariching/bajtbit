@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pintariching.github.io/bajtbit/sitemap.xml
+Sitemap: https://bajtbit.si/sitemap.xml
