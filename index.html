@@ -190,9 +190,9 @@
                         </li>
                     </ul>
                 </div>
-                <form class="contact-form" action="mailto:info@bajtbit.si" method="post"
-                    enctype="text/plain">
-                    <input type="hidden" name="subject" value="Povpraševanje z spletne strani">
+                <form class="contact-form" id="contact-form" action="mailto:info@bajtbit.si"
+                    method="get">
+                    <input type="hidden" name="subject" value="Povpraševanje">
                     <div class="form-row">
                         <label>
                             <span>Ime in priimek *</span>
@@ -227,7 +227,7 @@
                     </label>
                     <label>
                         <span>Opis naloge *</span>
-                        <textarea name="message" rows="5" required
+                        <textarea name="body" rows="5" required
                             placeholder="Kratek opis stroja, napake ali želene rešitve ..."></textarea>
                     </label>
                     <button type="submit" class="btn">Pošlji povpraševanje</button>
@@ -246,6 +246,7 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
