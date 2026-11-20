@@ -5,7 +5,8 @@ Statična enostranska spletna stran (le HTML + CSS, brez JavaScripta in brez gra
 ## Struktura
 
 - `index.html` — celotna vsebina (hero, storitve, o nas, potek sodelovanja, kontakt)
-- `css/style.css` — temna industrijska tema in odzivna postavitev
+- `assets/logo.svg` — logotip (uporabljen v glavi in kot favicon)
+- `css/style.css` — temna industrijska tema v barvah logotipa (oranžna `#ff9a30` in modra `#258bfa`) in odzivna postavitev
 
 Mobilni meni je izveden izključno s CSS (potrditveno polje, brez skripte).
 
