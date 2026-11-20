@@ -18,16 +18,17 @@
         </svg>
         <span class="brand-text">BAJTBIT<span class="brand-sub">Avtomatizacija</span></span>
       </a>
-      <nav class="site-nav" id="siteNav">
+      <input type="checkbox" id="navToggle" class="nav-toggle-input" aria-label="Odpri ali zapri meni">
+      <nav class="site-nav">
         <a href="#storitve">Storitve</a>
         <a href="#o-nas">O nas</a>
         <a href="#potek">Potek sodelovanja</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
       <a href="#kontakt" class="btn btn-sm header-cta">Povpraševanje</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Odpri meni" aria-expanded="false">
+      <label for="navToggle" class="nav-toggle" aria-hidden="true">
         <span></span><span></span><span></span>
-      </button>
+      </label>
     </div>
   </header>
 
@@ -226,7 +227,6 @@
             <textarea name="message" rows="5" required placeholder="Kratek opis stroja, napake ali želene rešitve ..."></textarea>
           </label>
           <button type="submit" class="btn">Pošlji povpraševanje</button>
-          <p class="form-note" id="formNote" hidden>Hvala za povpraševanje! Odzvali se bomo v najkrajšem možnem času.</p>
         </form>
       </div>
     </section>
@@ -242,6 +242,5 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

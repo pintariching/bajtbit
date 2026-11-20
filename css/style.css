@@ -165,14 +165,20 @@ a {
   color: var(--accent);
 }
 
+.nav-toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
   gap: 5px;
-  background: none;
-  border: none;
   cursor: pointer;
-  padding: 6px;
+  padding: 12px 6px;
 }
 
 .nav-toggle span {
@@ -182,9 +188,14 @@ a {
   transition: transform 0.2s, opacity 0.2s;
 }
 
-.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav-toggle-input:checked ~ .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-toggle-input:focus-visible ~ .nav-toggle {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
 
 .hero {
   position: relative;
@@ -580,7 +591,7 @@ a {
     display: none;
   }
 
-  .site-nav.open {
+  .nav-toggle-input:checked ~ .site-nav {
     display: flex;
   }
 
