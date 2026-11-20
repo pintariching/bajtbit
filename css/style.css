@@ -42,15 +42,25 @@ body {
     padding: 0 24px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: -0.01em;
 }
 
-h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
-h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
-h3 { font-size: 1.15rem; }
+h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+}
+
+h3 {
+    font-size: 1.15rem;
+}
 
 .accent {
     background: var(--gradient-accent);
@@ -199,11 +209,19 @@ a {
     transition: transform 0.2s, opacity 0.2s;
 }
 
-.nav-toggle-input:checked ~ .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle-input:checked ~ .nav-toggle span:nth-child(2) { opacity: 0; }
-.nav-toggle-input:checked ~ .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.nav-toggle-input:checked~.nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
 
-.nav-toggle-input:focus-visible ~ .nav-toggle {
+.nav-toggle-input:checked~.nav-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle-input:checked~.nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-toggle-input:focus-visible~.nav-toggle {
     outline: 2px solid var(--accent);
     outline-offset: 4px;
 }
@@ -586,6 +604,7 @@ a {
 }
 
 @media (max-width: 960px) {
+
     .services-grid,
     .steps {
         grid-template-columns: repeat(2, 1fr);
@@ -619,7 +638,7 @@ a {
         display: none;
     }
 
-    .nav-toggle-input:checked ~ .site-nav {
+    .nav-toggle-input:checked~.site-nav {
         display: flex;
     }
 
