@@ -18,8 +18,8 @@ Podatki so pripravljeni kot primer in jih je treba zamenjati z resničnimi:
 - vrednosti v razdelku »O nas« (število projektov, leta izkušenj)
 - leto v nogi strani je zapisano statično
 
-  Kontaktni obrazec trenutno nima strežniške obdelave; povežite ga s storitvijo,
-  ki omogoča delo brez JavaScripta (npr. Netlify Forms, Formspree), ali lastnim zaledjem.
+    Kontaktni obrazec trenutno nima strežniške obdelave; povežite ga s storitvijo,
+    ki omogoča delo brez JavaScripta (npr. Netlify Forms, Formspree), ali lastnim zaledjem.
 
 ## Predogled lokalno
 
